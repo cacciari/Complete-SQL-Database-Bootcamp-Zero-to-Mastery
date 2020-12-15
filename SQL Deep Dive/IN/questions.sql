@@ -5,6 +5,7 @@
 */
 
 SELECT * FROM orders;
+where customerid IN (7888, 1082, 12808, 9623);
 
 
 /*
@@ -13,4 +14,5 @@ SELECT * FROM orders;
 * Question: How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
 */
 
-SELECT * FROM city;
+select count(*) from city
+WHERE district IN ('Zuid-Holland', 'Noord-Brabant', 'Utrecht');
